@@ -194,8 +194,7 @@ const products = [
     { name: 'Tennis Balls', price: 9.00 }
 ];
 
-function sortByPrice(book) {
-    book.sort
-}
-products[0].price.sort
-console.log(products)
+let sortByPrice = products.sort(function (a,b) {
+        return a.price-b.price;
+    })
+
